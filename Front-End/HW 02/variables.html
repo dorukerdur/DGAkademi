@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="vegetable"></p>
+
+    <script>
+        const veggies = ["Lettuce", "Spinach", "Ginger", "Pumpkin", "Lemon"];
+        document.getElementById("vegetable").innerHTML = veggies;
+
+    </script>
+
+    <p id="numbers"></p>
+
+    <script>
+        var stringArray = new Array("One", "Wwo", "Three", "Four", "Five", "Six");
+
+        stringArray[0];
+        stringArray[1];
+        stringArray[2];
+        stringArray[3];
+        stringArray[4];
+        stringArray[5];
+
+        document.getElementById("numbers").innerHTML = stringArray;
+
+    </script>
+
+    <p id="superheroes"></p>
+
+    <script>
+        let heroes = [
+            "Batman",
+            "Superman",
+            "Green Arrow",
+            "Aquaman",
+            "Wonder Woman",
+            "Cyborg"
+        ];
+
+        document.getElementById("superheroes").innerHTML = heroes;
+
+    </script>
+
+
+    <h2>Input your exam result</h2>
+    <input id="result"/>
+    <button onclick="myResult()">OK</button>
+
+    <p id="examResult"></p>
+
+    <script>
+        function myResult() {
+            let result = document.getElementById("result").value;
+            let seeResult = (result >= 50) ? "pass" : "fail";
+
+            document.getElementById("examResult").innerHTML = "You " + seeResult + " the exam!!"
+
+        }
+    </script>
+
+
+    
+</body>
+</html>
