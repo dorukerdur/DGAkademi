@@ -1,0 +1,64 @@
+html{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background: #FFFFFF;
+
+}
+
+.time{
+    position: absolute;
+    width: 54px;
+    height: 23px;
+    left: 19.89px;
+    top: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.165px;
+
+    color: #000000;
+
+}
+
+.CellularConnection{
+    position: absolute;
+    height: 10.67px;
+    left: 294px;
+    top: 20px;
+
+}
+
+.Wifi{
+    position: absolute;
+    height: 11px;
+    left: 316.02px;
+    top: 20px;
+
+}
+
+.Border{
+    position: absolute;
+    height: 10.33px;
+    left: 336.88px;
+    top: 20px;
+
+}
+
+.Cap{
+    position: absolute;
+    height: 4px;
+    left: 356px;
+    top: 23.5px;
+}
+
+.Capacity{
+    position: absolute;
+    height: 7.33px;
+    left: 338px;
+    top: 21.5px;
+}
