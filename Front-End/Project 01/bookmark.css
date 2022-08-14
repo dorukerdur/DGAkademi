@@ -1,0 +1,726 @@
+html{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background: #FFFFFF;
+
+}
+
+.time{
+    position: absolute;
+    width: 54px;
+    height: 23px;
+    left: 19.89px;
+    top: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.165px;
+
+    color: #000000;
+
+}
+
+.CellularConnection{
+    position: absolute;
+    height: 10.67px;
+    left: 294px;
+    top: 20px;
+
+}
+
+.Wifi{
+    position: absolute;
+    height: 11px;
+    left: 316.02px;
+    top: 20px;
+
+}
+
+.Border{
+    position: absolute;
+    height: 10.33px;
+    left: 336.88px;
+    top: 20px;
+
+}
+
+.Cap{
+    position: absolute;
+    height: 4px;
+    left: 356px;
+    top: 23.5px;
+}
+
+.Capacity{
+    position: absolute;
+    height: 7.33px;
+    left: 338px;
+    top: 21.5px;
+}
+
+.rectangletop{
+    position: absolute;
+    width: 9px;
+    height: 1.5px;
+    background: #110E47;
+    border-radius: 0.75px;
+    left: 35px;
+    top: 67px;
+
+}
+
+.rectanglemid{
+    position: absolute;
+    width: 16px;
+    height: 1.5px;
+    background: #110E47;
+    border-radius: 0.75px;
+    left: 28px;
+    top: 73px;
+    
+}
+
+.rectanglebot{
+    position: absolute;
+    width: 9px;
+    height: 1.5px;
+    background: #110E47;
+    border-radius: 0.75px;
+    left: 28px;
+    top: 79px;
+
+}
+
+.Notification{
+    position: absolute;
+    left: 331px;
+    top: 64.5px;
+
+}
+
+.Dgcinema{
+    position: absolute;
+    height: 20px;
+    left: 145px;
+    top: 48px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #110E47;
+
+}
+
+.Homeindicator{
+    position: absolute;
+    width: 135px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100px;
+    left: 120px;
+    bottom: 8px;
+}
+
+.Home{
+    position: absolute;
+    left: 57px;
+    bottom: 56px;
+}
+
+.Bookmark{
+    position: absolute;
+    left: 305px;
+    bottom: 54px;
+}
+
+.Popular{
+    position: absolute;
+    height: 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+    left: 24px;
+    top: 131px;
+}
+
+.Seemore{
+    width: 37px;
+    height: 13px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #AAA9B1;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    position: absolute;
+    left: 6px;
+    top: -6px;
+
+}
+
+.Seemorebox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 8px;
+    gap: 10px;
+    position: absolute;
+    width: 53px;
+    height: 21px;
+    border: 1px solid #E5E4EA;
+    border-radius: 100px;
+    left: 298px;
+    top: 147px;
+}
+
+.Film1{
+    position: absolute;
+    width: 319px;
+    height: 120px;
+    left: 24px;
+    top: 167px;
+}
+
+.Venom{
+    position: absolute;
+    width: 85px;
+    height: 120px;
+    left: 0px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+.Venomtitle{
+    position: absolute;
+    height: 33px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: left;
+    left: 111px;
+    top: 0px;
+}
+
+.imdb1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 86px;
+    height: 15px;
+    left: 111px;
+    top: 59px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+
+}
+
+.genre1{
+    position: absolute;
+    width: 177px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    left: 111px;
+    top: 76px;
+}
+
+.venomcategory1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.venomcategory2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.venomcategory3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.duration1{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 59.72px;
+    height: 15px;
+    left: 111px;
+    top: 108px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+
+}
+
+.Film2{
+    position: absolute;
+    width: 319px;
+    height: 120px;
+    left: 24px;
+    top: 303px;
+}
+
+.TheKingsMan1{
+    position: absolute;
+    width: 85px;
+    height: 120px;
+    left: 0px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+.TheKingsMantitle1{
+    position: absolute;
+    height: 18px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: left;
+    left: 111px;
+    top: 0px;
+}
+
+.imdb2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 86px;
+    height: 15px;
+    left: 111px;
+    top: 42px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+
+}
+
+.genre2{
+    position: absolute;
+    width: 177px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    left: 111px;
+    top: 56px;
+}
+
+.thekingsmancategory21{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.thekingsmancategory22{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.duration2{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 59.72px;
+    height: 15px;
+    left: 111px;
+    top: 88px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.Film3{
+    position: absolute;
+    width: 319px;
+    height: 120px;
+    left: 24px;
+    top: 439px;
+}
+
+.TheKingsMan2{
+    position: absolute;
+    width: 85px;
+    height: 120px;
+    left: 0px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+.TheKingsMantitle2{
+    position: absolute;
+    height: 18px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: left;
+    left: 111px;
+    top: 0px;
+}
+
+.imdb3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 86px;
+    height: 15px;
+    left: 111px;
+    top: 42px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+
+}
+
+.genre3{
+    position: absolute;
+    width: 177px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    left: 111px;
+    top: 56px;
+}
+
+.thekingsmancategory31{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.thekingsmancategory32{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.duration3{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 59.72px;
+    height: 15px;
+    left: 111px;
+    top: 88px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.Film4{
+    position: absolute;
+    width: 319px;
+    height: 120px;
+    left: 24px;
+    top: 575px;
+}
+
+.TheKingsMan3{
+    position: absolute;
+    width: 85px;
+    height: 120px;
+    left: 0px;
+    top: 15px;
+    border-radius: 5px;
+}
+
+.TheKingsMantitle3{
+    position: absolute;
+    height: 18px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: left;
+    left: 111px;
+    top: 0px;
+}
+
+.imdb4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 86px;
+    height: 15px;
+    left: 111px;
+    top: 42px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+
+}
+
+.genre4{
+    position: absolute;
+    width: 177px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    left: 111px;
+    top: 56px;
+}
+
+.thekingsmancategory41{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.thekingsmancategory42{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.duration4{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    width: 59.72px;
+    height: 15px;
+    left: 111px;
+    top: 88px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
