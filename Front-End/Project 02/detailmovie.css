@@ -1,0 +1,469 @@
+html{
+    position: absolute;
+    width: 375px;
+    height: 812px;
+    background: #FFFFFF;
+
+}
+
+.Homeindicator{
+    position: absolute;
+    width: 135px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100px;
+    left: 120px;
+    bottom: 8px;
+}
+
+.time{
+    position: absolute;
+    width: 54px;
+    height: 23px;
+    left: 19.89px;
+    top: 0px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.165px;
+
+    color: #FFFFFF;    
+}
+
+.CellularConnection{
+    position: absolute;
+    height: 10.67px;
+    left: 294px;
+    top: 20px;
+    color: #FFFFFF;
+}
+
+.Wifi{
+    position: absolute;
+    height: 11px;
+    left: 316.02px;
+    top: 20px;
+
+}
+
+.Border{
+    position: absolute;
+    height: 10.33px;
+    left: 336.88px;
+    top: 20px;
+
+}
+
+.Cap{
+    position: absolute;
+    height: 4px;
+    left: 356px;
+    top: 23.5px;
+}
+
+.Capacity{
+    position: absolute;
+    height: 7.33px;
+    left: 338px;
+    top: 21.5px;
+}
+
+.Back{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 24px;
+    top: 62px;
+}
+
+.Nowayhome{
+    position: absolute;
+    width: 375px;
+    height: 300px;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+.Menu{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 327px;
+    top: 62px;
+}
+
+.ButtonPlay{
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 165px;
+    top: 128px;
+}
+
+.PlayTrailer{
+    position: absolute;
+    height: 15px;
+    left: 142px;
+    top: 170px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.FilmDetails{
+    position: absolute;
+    width: 375px;
+    height: 538px;
+    left: 0px;
+    top: 240px;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.Title{
+    position: absolute;
+    height: 25px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    left: 24px;
+    top: 1px;
+}
+
+.BookmarkDetails{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 327px;
+    top: 21px;
+}
+
+.imdb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 86px;
+    height: 15px;
+    left: 24px;
+    top: 82px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+}
+
+.genre{
+    position: absolute;
+    width: 177px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    left: 24px;
+    top: 113px;
+}
+
+.spidermancategory1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.spidermancategory2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+    
+}
+
+.spidermancategory3{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 4px 12px;
+    gap: 10px;
+    background: #DBE3FF;
+    border-radius: 100px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;   
+}
+
+.Timer{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;    
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+    left: 24px;
+    top: 147px;
+}
+
+.Timer1{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    left: 24px;
+    top: 166px;
+}
+
+.Language{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+    left: 133px;
+    top: 147px;
+}
+
+.Language1{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    left: 133px;
+    top: 166px;
+}
+
+.Rating{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+    left: 242px;
+    top: 147px;
+}
+
+.Rating1{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    left: 242px;
+    top: 166px;
+}
+
+.Description{
+    position: absolute;
+    height: 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+    left: 24px;
+    top: 205px;
+}
+
+.Description1{
+    position: absolute;
+    height: 110px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+    left: 24px;
+    top: 233px;
+}
+
+.Cast{
+    position: absolute;
+    height: 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+    left: 24px;
+    top: 367px;
+}
+
+.ButtontoSeeMore{
+    position: absolute;
+    left: 298px;
+    top: 382px;
+}
+
+.TomHolland{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 24px;
+    top: 420px;
+}
+
+.TomHolland1{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+    left: 24px;
+    top: 484px;
+}
+
+.Zendaya{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 109px;
+    top: 420px;
+}
+
+.Zendaya1{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+    left: 109px;
+    top: 484px;
+}
+
+.Benedict{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 194px;
+    top: 420px;
+}
+
+.Benedict1{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+    left: 194px;
+    top: 484px;
+}
+
+.Jacon{
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    left: 279px;
+    top: 420px;
+}
+
+.Jacon1{
+    position: absolute;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+    left: 279px;
+    top: 484px;
+}
