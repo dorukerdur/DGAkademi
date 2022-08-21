@@ -25,6 +25,12 @@ html{
 
 }
 
+@media screen and (min-width: 376px){
+    .StatusBar {
+        display: none;
+    }
+}
+
 .CellularConnection{
     position: absolute;
     height: 10.67px;
@@ -81,8 +87,7 @@ html{
     background: #110E47;
     border-radius: 0.75px;
     left: 28px;
-    top: 73px;
-    
+    top: 73px; 
 }
 
 .rectanglebot{
@@ -96,11 +101,22 @@ html{
 
 }
 
+@media screen and (min-width: 376px){
+    .rectangle {
+        display: none;
+    }
+}
+
 .Notification{
     position: absolute;
     left: 331px;
     top: 64.5px;
+}
 
+@media screen and (min-width: 376px){
+    .Notification{
+        display: none;
+    }
 }
 
 .Dgcinema{
@@ -119,6 +135,22 @@ html{
 
 }
 
+@media screen and (min-width: 376px) {
+    .Dgcinema {
+        position: absolute;
+        height: 30px;
+        left: 25px;
+        top: 50px;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+    }
+}
+
 .Homeindicator{
     position: absolute;
     width: 135px;
@@ -127,6 +159,12 @@ html{
     border-radius: 100px;
     left: 120px;
     bottom: 8px;
+}
+
+@media screen and (min-width: 376px){
+    .Homeindicator {
+        display: none;
+    }
 }
 
 .Home{
@@ -141,6 +179,12 @@ html{
     bottom: 54px;
 }
 
+@media screen and (min-width: 376px) {
+    .bottomnavbar{
+        display: none;
+    }
+}
+
 .Popular{
     position: absolute;
     height: 20px;
@@ -153,6 +197,21 @@ html{
     color: #110E47;
     left: 24px;
     top: 131px;
+}
+
+@media screen and (min-width: 376px){
+    .Popular{
+        position: absolute;
+        height: 20px;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        left: 91px;
+        top: 209px;
+    }
 }
 
 .Seemore{
@@ -191,12 +250,30 @@ html{
     top: 147px;
 }
 
+@media screen and (min-width: 376px){
+    .Seemorebox{
+        position: absolute;
+        top: 224px;
+        left: 1073px;
+    }
+}
+
 .Film1{
     position: absolute;
     width: 319px;
     height: 120px;
     left: 24px;
     top: 167px;
+}
+
+@media screen and (min-width: 376px){
+    .Film1{
+        position: absolute;
+        width: 319px;
+        height: 120px;
+        left: 807px;
+        top: 250px;
+    }
 }
 
 .Venom{
@@ -349,6 +426,16 @@ html{
     top: 303px;
 }
 
+@media screen and (min-width: 376px){
+    .Film2{
+        position: absolute;
+        width: 319px;
+        height: 120px;
+        left: 807px;
+        top: 400px;
+    }
+}
+
 .TheKingsMan1{
     position: absolute;
     width: 85px;
@@ -475,6 +562,16 @@ html{
     height: 120px;
     left: 24px;
     top: 439px;
+}
+
+@media screen and (min-width: 376px){
+    .Film3{
+        position: absolute;
+        width: 319px;
+        height: 120px;
+        left: 807px;
+        top: 550px;
+    }
 }
 
 .TheKingsMan2{
@@ -605,6 +702,16 @@ html{
     top: 575px;
 }
 
+@media screen and (min-width: 376px){
+    .Film4{
+        position: absolute;
+        width: 319px;
+        height: 120px;
+        left: 807px;
+        top: 700px;
+    }
+}
+
 .TheKingsMan3{
     position: absolute;
     width: 85px;
@@ -723,4 +830,62 @@ html{
     line-height: 15px;
     letter-spacing: 0.02em;
     color: #000000;
+}
+
+@media screen and (max-width: 376px) {
+    .HeaderforPc{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .BookmarkPc{
+        position: absolute;
+        width: 43.66px;
+        height: 42px;
+        top: 66px;
+        left: 929.32px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .NotificationPc{
+        position: absolute;
+        width: 43.66px;
+        height: 42px;
+        top: 66px;
+        left: 1004.16px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .AvatarPc{
+        position: absolute;
+        width: 43.66px;
+        height: 42px;
+        top: 66px;
+        left: 1077.96px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .Favoritues{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .Favoritues{
+        position: absolute;
+        height: 20px;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: #110E47;
+        top: 209px;
+        left: 807px;
+    }
 }
