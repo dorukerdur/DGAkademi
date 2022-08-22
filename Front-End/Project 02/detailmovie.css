@@ -16,6 +16,12 @@ html{
     bottom: 8px;
 }
 
+@media screen and (min-width: 376px){
+    .Homeindicator {
+        display: none;
+    }
+}
+
 .time{
     position: absolute;
     width: 54px;
@@ -72,12 +78,24 @@ html{
     top: 21.5px;
 }
 
+@media screen and (min-width: 376px){
+    .StatusBar{
+        display: none;
+    }
+}
+
 .Back{
     position: absolute;
     width: 24px;
     height: 24px;
     left: 24px;
     top: 62px;
+}
+
+@media screen and (min-width: 376px){
+    .Back{
+        display: none;
+    }
 }
 
 .Nowayhome{
@@ -89,6 +107,12 @@ html{
     z-index: -1;
 }
 
+@media screen and (min-width: 376px){
+    .Nowayhome{
+        display: none;
+    }
+}
+
 .Menu{
     position: absolute;
     width: 24px;
@@ -97,12 +121,28 @@ html{
     top: 62px;
 }
 
+@media screen and (min-width: 376px){
+    .Menu{
+        display: none;
+    }
+}
+
 .ButtonPlay{
     position: absolute;
     width: 45px;
     height: 45px;
     left: 165px;
     top: 128px;
+}
+
+@media screen and (min-width: 376px){
+    .ButtonPlay{
+        position: absolute;
+        width: 97px;
+        height: 68px;
+        left: 567px;
+        top: 299px;
+    }
 }
 
 .PlayTrailer{
@@ -121,6 +161,15 @@ html{
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (min-width: 376px) {
+    .PlayTrailer{
+        position: absolute;
+        height: 15px;   
+        left: 590px;
+        top: 370px;
+    }
+}
+
 .FilmDetails{
     position: absolute;
     width: 375px;
@@ -129,6 +178,16 @@ html{
     top: 240px;
     background: #FFFFFF;
     border-radius: 10px 10px 0px 0px;
+}
+
+@media screen and (min-width: 376px){
+    .FilmDetails{
+        position: absolute;
+        width: 1227px;
+        height: 514px;
+        left: 0px;
+        top: 566px;
+    }
 }
 
 .Title{
@@ -466,4 +525,80 @@ html{
     color: #110E47;
     left: 279px;
     top: 484px;
+}
+
+@media screen and (max-width: 376px) {
+    .DGcinema{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .DGcinema{
+        position: absolute;
+        height: 30px;
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        left: 25px;
+        top: 25px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .HeaderforPc{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .BookmarkPc{
+        position: absolute;
+        width: 43.66px;
+        height: 42px;
+        top: 66px;
+        left: 929.32px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .NotificationPc{
+        position: absolute;
+        width: 43.66px;
+        height: 42px;
+        top: 66px;
+        left: 1004.16px;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .AvatarPc{
+        position: absolute;
+        width: 43.66px;
+        height: 42px;
+        top: 66px;
+        left: 1077.96px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .NowayhomePc{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .NowayhomePc{
+        position: absolute;
+        width: 1920px;
+        height: 610px;
+        left: -400px;
+        top: 0px;
+        z-index: -1;
+    }
 }
