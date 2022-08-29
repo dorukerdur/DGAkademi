@@ -9,7 +9,7 @@ export default function Detail () {
 
     const { id } = useParams()
     const [movie, setMovie] = useState([])
-    const [genres, setGenres] = useState([])
+    const [favoritues, setFavoritues] = useState([])
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=c924ef35363db87a24b0e89513ddb067&language=tr`)
@@ -28,6 +28,11 @@ export default function Detail () {
             setMovie(movie);
         })
     }, [id])
+
+    const addFavorituesMovie = (movie) => {
+        const newFavorituesList = [...favoritues, movie];
+        setFavoritues(newFavorituesList);
+    }
 
     return (
         <div className="detail">
@@ -60,7 +65,9 @@ export default function Detail () {
                         </div>
 
                         <div className="menu-for-pc">
+                            <Link to ="/favoriues">
                             <img src={window.location.origin + "/images/Bookmark for Pc.svg"} alt="Bookmark Pc" />
+                            </Link>
                             <img src={window.location.origin + "/images/Notification Pc.svg"} alt="Notification Pc" />
                             <img src={window.location.origin + "/images/Avatar.png"} alt="Avatar" />
                         </div>
@@ -70,7 +77,9 @@ export default function Detail () {
                         <img className="movie-list-detail-image" src={movie.image} alt={movie.title}/>
                         <div className="movie-list-title-detail">
                             <h1>{movie.title}</h1>
+                            <div className="movie-list-add-to-favoritues-details">
                             <img src={window.location.origin + "/images/Bookmark for Details.svg"} alt="Back" />
+                            </div>
                         </div>
                         <div className="movie-list-imdb-detail">
                             <img src={window.location.origin + "/images/Star.svg"} alt="Star" />

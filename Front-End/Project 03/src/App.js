@@ -10,7 +10,7 @@ export default function App() {
     <Router>
         <Routes>
           <Route exact path="/" element={<Wrapper/>}/>
-          <Route path="/favoritues" element={Favoritues}/>
+          <Route path="/favoritues" element={<Favoritues/>}/>
           <Route exact path="/detail/:id" element={<Detail/>}/>
         </Routes>
     </Router>

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+body{
+    font-family: system-ui;
+}
+
+.mobile-status-favoritues{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 805px;
+}
+
+.mobile-status-top-favoritues{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.mobile-status-condition-favoritues{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;  
+}
+
+.mobile-status-time-favoritues{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.165px;
+    padding: 20px;
+    color: #000;
+}
+
+.mobile-status-bottom-favoritues{
+    align-self: center;
+}
+
+.mobile-status-indicator-favoritues {
+    width: 135px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-status-top-favoritues, .mobile-status-bottom-favoritues{
+        display: none;
+    }
+}
+
+.menu-favoritues{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.menu-top-favoritues{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #110E47;
+}
+
+.menu-bottom-favoritues{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.popular-favoritues{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.title-favoritues{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+    .menu-icon-favoritues, .menu-notification-favoritues, .menu-bottom-favoritues{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .menu-top-favoritues{
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #110E47;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-for-pc-favoritues{
+        display: none;
+    }
+}

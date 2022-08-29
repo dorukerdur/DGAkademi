@@ -9,7 +9,6 @@ export default function Wrapper() {
 
   const [movies, setMovies] = useState([])
   const [genres, setGenres] = useState([])
-  const [selectedMovie, setSelectedMovie] = useState([])
   
 
 
@@ -62,7 +61,9 @@ export default function Wrapper() {
                   <img src="images/Notif.svg" alt="Notification" />
                 </div>
                 <div className="menu-for-pc">
+                  <Link to ="/favoritues">
                   <img src="images/Bookmark for Pc.svg" alt="Bookmark Pc" />
+                  </Link>
                   <img src="images/Notification Pc.svg" alt="Notification Pc" />
                   <img src="images/Avatar.png" alt="Avatar" />
                 </div>
@@ -106,9 +107,11 @@ export default function Wrapper() {
               </div>
 
               <div className="menu-bottom">
-                  <div className="menu-home">
-                    <img src="images/Bookmark Home.svg" alt="Home" />
-                  </div>
+                  <Link to ="/">
+                    <div className="menu-home">
+                      <img src="images/Bookmark Home.svg" alt="Home" />
+                    </div>
+                  </Link>
                   <Link to="/favoritues">
                     <div className="menu-bookmark">
                       <img src="images/Bookmark.svg" alt="Bookmark" />
