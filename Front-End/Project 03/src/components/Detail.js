@@ -10,7 +10,6 @@ export default function Detail () {
     const { id } = useParams()
     const [movie, setMovie] = useState([])
     const [favoritues, setFavoritues] = useState([])
-    console.log(favoritues);
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=c924ef35363db87a24b0e89513ddb067&language=tr`)
