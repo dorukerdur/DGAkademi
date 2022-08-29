@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    text-decoration: none;
+}
+
+body{
+    font-family: system-ui;
+}
+
+.mobile-status-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 805px;
+}
+
+.mobile-status-top-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.mobile-status-condition-detail{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;  
+}
+
+.mobile-status-time-detail{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.165px;
+    padding: 20px;
+    color: #000;
+}
+
+.mobile-status-bottom-detail{
+    align-self: center;
+}
+
+.mobile-status-indicator-detail {
+    width: 135px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-status-top-detail, .mobile-status-bottom-detail{
+        display: none;
+    }
+}
+
+.menu-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.menu-top-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.movie-list-detail{
+    overflow-y: scroll;
+}
+
+.movie-list-detail-image{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.movie-list-title-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.movie-list-imdb-detail{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 0 37px;
+}
+
+.movie-list-release-date-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-date-static-detail{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+}
+
+.movie-date-detail{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.movie-list-original-language{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-list-language-static-detail{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+}
+
+.movie-list-language-detail{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.movie-list-general-information-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 37px;
+}
+
+.movie-list-overview-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 37px;
+    overflow-y: scroll;
+}
+
+.movie-list-overview-aciklama{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+}
+
+.movie-list-overview-sinopse-detail{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+}
+
+@media screen and (min-width: 768px){
+    .menu-three-dot-detail{
+        display: none;
+    } 
+}

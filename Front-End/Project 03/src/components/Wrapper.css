@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    text-decoration: none;
+}
+
+body{
+    font-family: system-ui;
+}
+
+.mobile-status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 805px;
+}
+
+.mobile-status-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.mobile-status-condition{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;  
+}
+
+.mobile-status-time{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.165px;
+    padding: 20px;
+    color: #000000;
+}
+
+.mobile-status-bottom{
+    align-self: center;
+}
+
+.mobile-status-indicator {
+    width: 135px;
+    height: 5px;
+    background: #000000;
+    border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-status-top, .mobile-status-bottom{
+        display: none;
+    }
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #110E47;
+}
+
+.menu-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.popular{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+}
+    
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #110E47;
+}
+
+.movie-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 100px;
+    row-gap: 16px;
+    padding: 2rem;
+    overflow-y: scroll;
+}
+
+.movie{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 0;
+    
+}
+
+.movie-image{
+    width: 85px;
+    border-radius: 5px;
+}
+
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.movie-title{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    vertical-align: top;
+    width: 150px; 
+    word-break: break-word;
+}
+
+.movie-imdb{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #9C9C9C;
+}
+
+.movie-genre{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 53px;
+    height: 18px;
+
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: 0.02em;
+    color: #88A4E8;
+}
+
+.movie-release-date{
+    width: 46px;
+    height: 15px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #000000; 
+}
+
+@media screen and (min-width: 768px) {
+    .menu-icon, .menu-notification, .menu-bottom{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .menu-top{
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #110E47;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .menu-for-pc{
+        display: none;
+    }
+}
+
