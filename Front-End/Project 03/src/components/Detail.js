@@ -10,6 +10,7 @@ export default function Detail () {
     const { id } = useParams()
     const [movie, setMovie] = useState([])
     const [favoritues, setFavoritues] = useState([])
+    console.log(favoritues);
 
     useEffect(() => {
         fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=c924ef35363db87a24b0e89513ddb067&language=tr`)
@@ -29,10 +30,42 @@ export default function Detail () {
         })
     }, [id])
 
+    useEffect(() => {
+        const movieFavoritues = JSON.parse(
+            localStorage.getItem('react-movie-app-favoritues')
+        );
+        if(movieFavoritues) {
+            setFavoritues(movieFavoritues);
+        }
+    }, []);
+
+    const saveToLocalStorage = (items) => {
+        localStorage.setItem('react-movie-app-favoritues', JSON.stringify(items));
+    };
+
     const addFavorituesMovie = (movie) => {
+        const check = favoritues.every((item) => {
+            return item.id !== movie.id;
+        });
+        if(check){
         const newFavorituesList = [...favoritues, movie];
         setFavoritues(newFavorituesList);
-    }
+        saveToLocalStorage(newFavorituesList);
+        }
+        else{
+            alert("This movie is already in your watch list")
+        }
+    };
+
+    const removeFavorituesMovie = (movie) => {
+        const newFavorituesList = favoritues.filter(
+            (favorite) => favorite.imdbID !== movie.imdbID
+        );
+
+        setFavoritues(newFavorituesList);
+        saveToLocalStorage(newFavorituesList);
+    };
+
 
     return (
         <div className="detail">
@@ -65,7 +98,7 @@ export default function Detail () {
                         </div>
 
                         <div className="menu-for-pc">
-                            <Link to ="/favoriues">
+                            <Link to ="/favoritues">
                             <img src={window.location.origin + "/images/Bookmark for Pc.svg"} alt="Bookmark Pc" />
                             </Link>
                             <img src={window.location.origin + "/images/Notification Pc.svg"} alt="Notification Pc" />
@@ -77,8 +110,8 @@ export default function Detail () {
                         <img className="movie-list-detail-image" src={movie.image} alt={movie.title}/>
                         <div className="movie-list-title-detail">
                             <h1>{movie.title}</h1>
-                            <div className="movie-list-add-to-favoritues-details">
-                            <img src={window.location.origin + "/images/Bookmark for Details.svg"} alt="Back" />
+                            <div className="movie-list-add-to-favoritues-details" onClick={() => addFavorituesMovie(movie)}>
+                                <img src={window.location.origin + "/images/Bookmark for Details.svg"} alt="Back" />
                             </div>
                         </div>
                         <div className="movie-list-imdb-detail">
@@ -94,6 +127,11 @@ export default function Detail () {
                                 <span className="movie-list-language-static-detail">Dil</span>
                                 <span className="movie-list-language-detail">{movie.language}</span>
                             </div>
+                            <Link to="/payment">
+                            <div className="movie-list-shopping">
+                                <img src={window.location.origin + "/images/basket-shopping-solid.svg"} alt="Shopping Basket"/>
+                            </div>
+                            </Link>
                         </div>
                         <div className="movie-list-overview-detail">
                                 <span className="movie-list-overview-aciklama">Açıklama</span>

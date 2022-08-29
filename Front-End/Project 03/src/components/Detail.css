@@ -98,6 +98,12 @@ body{
     line-height: 25px;
     letter-spacing: 0.02em;
     color: #000000;
+    
+}
+
+.movie-list-shopping{
+    width: 30px;
+    height: 30px;
 }
 
 .movie-list-add-to-favoritues-details{

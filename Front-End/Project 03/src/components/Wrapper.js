@@ -7,16 +7,15 @@ export default function Wrapper() {
 
   const imagePath = 'https://image.tmdb.org/t/p/w500';
 
-  const [movies, setMovies] = useState([])
+  const [movie, setMovie] = useState([])
   const [genres, setGenres] = useState([])
-  
 
 
   useEffect(() => {
     fetch(`https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=c924ef35363db87a24b0e89513ddb067&language=tr`)
     .then(response => response.json())
     .then(data => {
-      setMovies(data.results)
+      setMovie(data.results)
     })
     fetch(`https://api.themoviedb.org/3/genre/movie/list?api_key=c924ef35363db87a24b0e89513ddb067&language=tr`)
     .then(genre => genre.json())
@@ -75,7 +74,7 @@ export default function Wrapper() {
                   <img src="images/Button See More.svg" alt="Button See More" />
                 </div>
                 <div className="movie-list">
-                  {movies.map(movie => {
+                  {movie.map(movie => {
                     return (
                       <Link to={`/detail/${movie.id}`}>
                       <div className="movie" key={movie.id}>

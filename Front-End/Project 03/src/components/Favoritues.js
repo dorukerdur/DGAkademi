@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import "./Favoritues.css";
 
@@ -7,9 +7,29 @@ export default function Favoritues (){
     
     const imagePath = 'https://image.tmdb.org/t/p/w500';
 
-    const { id } = useParams()
-    const [movies, setMovies] = useState([])
-    const [genres, setGenres] = useState([])
+    const [favoritues, setFavoritues] = useState([])
+
+    useEffect(() => {
+        const movieFavoritues = JSON.parse(
+            localStorage.getItem('react-movie-app-favoritues')
+        );
+        if(movieFavoritues) {
+            setFavoritues(movieFavoritues);
+        }
+    }, []);
+
+    const saveToLocalStorage = (items) => {
+        localStorage.setItem('react-movie-app-favoritues', JSON.stringify(items));
+    };
+
+
+    const removeFavorituesMovie = (movie) => {
+        const newFavorituesList = favoritues.filter(
+            (favorite) => favorite.id !== movie.id);
+
+        setFavoritues(newFavorituesList);
+        saveToLocalStorage(newFavorituesList);
+    };
 
     return(
         <div className="favoritues">
@@ -36,9 +56,11 @@ export default function Favoritues (){
                         <div className="menu-icon-favoritues">
                             <img src={window.location.origin + "/images/Menu.svg"} alt="Menu" />
                         </div>
+                        <Link to={"/"}>
                         <div className="menu-title-favoritues">
                             <h3>Dgcinema</h3>
                         </div>
+                        </Link>
                         <div className="menu-notification-favoritues">
                             <img src={window.location.origin + "/images/Notif.svg"} alt="Notification" />
                         </div>
@@ -56,6 +78,30 @@ export default function Favoritues (){
                             <div className="title-popular-favoritues">Favoriler</div>
                             <img src={window.location.origin + "/images/Button See More.svg"} alt="Button See More" />
                         </div>
+
+                        <div className="movie-list-favoritues">
+                            {favoritues.map(movie => {
+                                return(
+                                    <div className="movie-favoritues" key={movie.id}>
+                                        <img className ="movie-image-favoritues" src={`${imagePath}${movie.image}`} alt={movie.title}/>
+                                    <div className="movie-info-favoritues">
+                                        <div className="movie-title-favoritues">{movie.title}</div>
+                                        <div className="movie-imdb-favoritues">
+                                            <img src="images/Star.svg" alt="Star" />
+                                            <span className="movie-vote-favoritues">{movie.imdb}/10 IMDb</span>
+                                        </div>
+                                    
+                                    <div className="movie-date-favoritues">
+                                        <span className="movie-release-date-favoritues">{movie.releaseDate}</span>
+                                    </div>
+                                    <div className ="movie-list-delete-favoritues" onClick={() => removeFavorituesMovie(movie)} >
+                                    <img src={window.location.origin + "/images/Delete Favoritues.svg"} alt="Delete Favoritues"/>
+                                    </div>
+                                </div>
+                            </div>
+                            )
+                        })}
+                    </div>
 
 
                     </div>
